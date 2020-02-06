@@ -22,6 +22,9 @@ jobs:
       - checkout
 
       # specify any bash command here prefixed with `run: `
+      - run: echo $GOPATH
+      - run: echo $PATH
+      - run: echo $HOME
       - run: go get github.com/ahsu1230/GolangCITest/morenum
       - run: go get github.com/ahsu1230/GolangCITest/morestrings
       - run: go get -v -t -d ./...
