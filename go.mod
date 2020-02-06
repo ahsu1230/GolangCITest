@@ -6,6 +6,7 @@ require (
 	github.com/Masterminds/semver v1.5.0 // indirect
 	github.com/Masterminds/vcs v1.13.1 // indirect
 	github.com/armon/go-radix v1.0.0 // indirect
+	github.com/aws/aws-sdk-go v1.28.11 // indirect
 	github.com/boltdb/bolt v1.3.1 // indirect
 	github.com/gin-gonic/gin v1.5.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
