@@ -7,6 +7,7 @@ import (
 	"github.com/ahsu1230/GolangCITest/arithmetic"
 	"github.com/ahsu1230/GolangCITest/strings"
 
+	"github.com/gin-gonic/gin"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -20,6 +21,15 @@ func initLogger() {
 
   // Only log the warning severity or above.
   log.SetLevel(log.WarnLevel)
+}
+
+func initGin() {
+	r := gin.Default()
+	r.GET("/ping", func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			"message": "pong",
+		})
+	})
 }
 
 func main() {
