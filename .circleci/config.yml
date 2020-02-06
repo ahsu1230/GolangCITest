@@ -23,8 +23,20 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run: echo $GOPATH
+      - run: echo $GOBIN
       - run: echo $PATH
       - run: echo $HOME
+
+      - run: export GOROOT=$HOME/bin/go
+      - run: GOBIN=$GOROOT/bin
+      - run: GOPATH=$HOME/golang
+      - run: export PATH=$PATH:$GOBIN
+
+      - run: echo $GOPATH
+      - run: echo $GOBIN
+      - run: echo $PATH
+      - run: echo $HOME
+      -
       - run: go get github.com/ahsu1230/GolangCITest/morenum
       - run: go get github.com/ahsu1230/GolangCITest/morestrings
       - run: go get -v -t -d ./...
