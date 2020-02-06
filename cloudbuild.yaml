@@ -1,0 +1,7 @@
+# Build the module.
+- name: golang
+  args: ['go', 'build', '.']
+artifacts:
+  objects:
+    location: 'gs://golang-test-ci'
+    paths: ['./']
