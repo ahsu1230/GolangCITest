@@ -8,9 +8,8 @@ require (
 	github.com/armon/go-radix v1.0.0 // indirect
 	github.com/aws/aws-sdk-go v1.28.11 // indirect
 	github.com/boltdb/bolt v1.3.1 // indirect
-	github.com/gin-gonic/gin v1.5.0 // indirect
+	github.com/gin-gonic/gin v1.5.0
 	github.com/go-playground/universal-translator v0.17.0 // indirect
-	github.com/golang/dep v0.5.4 // indirect
 	github.com/golang/protobuf v1.3.3 // indirect
 	github.com/jmank88/nuts v0.4.0 // indirect
 	github.com/json-iterator/go v1.1.9 // indirect
